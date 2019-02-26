@@ -34,7 +34,7 @@ void stat_dialog::on_saveButton_clicked()
 	std::wstring src_file = filename.toStdWString();
 
 	dimensions& dim = ga_.get_goal_image().dimensions_;
-	const unsigned zoom = 1000 / (dim.width > dim.height ? dim.width : dim.height);
+	const unsigned zoom = std::stoi(this->zoomLineEdit->text().toStdWString());
 
 	image result_image(ga_.get_goal_image().dimensions_.width * zoom, ga_.get_goal_image().dimensions_.height * zoom);
 	result_image.draw_solution(*ga_.best_solution, zoom);

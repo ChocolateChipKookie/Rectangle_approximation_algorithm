@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
@@ -29,6 +30,8 @@ public:
     QLabel *rectangleLabel;
     QLabel *rectangleConuterLabel;
     QPushButton *saveButton;
+    QLabel *zoomLabel;
+    QLineEdit *zoomLineEdit;
 
     void setupUi(QDialog *stat_dialog)
     {
@@ -71,7 +74,14 @@ public:
         rectangleConuterLabel->setFont(font);
         saveButton = new QPushButton(stat_dialog);
         saveButton->setObjectName(QString::fromUtf8("saveButton"));
-        saveButton->setGeometry(QRect(10, 170, 311, 41));
+        saveButton->setGeometry(QRect(10, 170, 131, 41));
+        zoomLabel = new QLabel(stat_dialog);
+        zoomLabel->setObjectName(QString::fromUtf8("zoomLabel"));
+        zoomLabel->setGeometry(QRect(160, 170, 61, 41));
+        zoomLabel->setFont(font);
+        zoomLineEdit = new QLineEdit(stat_dialog);
+        zoomLineEdit->setObjectName(QString::fromUtf8("zoomLineEdit"));
+        zoomLineEdit->setGeometry(QRect(230, 171, 91, 41));
 
         retranslateUi(stat_dialog);
 
@@ -90,6 +100,8 @@ public:
         rectangleLabel->setText(QApplication::translate("stat_dialog", "Rectangles:", nullptr));
         rectangleConuterLabel->setText(QApplication::translate("stat_dialog", "0", nullptr));
         saveButton->setText(QApplication::translate("stat_dialog", "Save", nullptr));
+        zoomLabel->setText(QApplication::translate("stat_dialog", "Zoom:", nullptr));
+        zoomLineEdit->setText(QApplication::translate("stat_dialog", "4", nullptr));
     } // retranslateUi
 
 };
