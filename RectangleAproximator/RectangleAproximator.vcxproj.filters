@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Source Files\Algorithm">
+      <UniqueIdentifier>{0a2fb619-edde-4c31-ba63-96d839e0dbbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application">
+      <UniqueIdentifier>{a278d257-5d36-4544-811b-f78a6f90a914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithm\GeneticAlgorithm">
+      <UniqueIdentifier>{85729f94-92ad-4ab3-86ca-1399bd305292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithm\Image">
+      <UniqueIdentifier>{18f7d2de-8c2f-460f-a2a0-b4a322fe5b90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithm\GeneticAlgorithm\Crossover">
+      <UniqueIdentifier>{018e6406-d5b2-4779-9a91-55b6b365959d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithm\GeneticAlgorithm\Mutation">
+      <UniqueIdentifier>{28c84c86-58e4-451e-b3f5-4959b2c49b83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithm\GeneticAlgorithm\Selection">
+      <UniqueIdentifier>{3e46eb57-6527-4e57-95ac-7d608ffb49a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithm\GeneticAlgorithm\Solution">
+      <UniqueIdentifier>{5151dc36-e8a8-42d0-9474-523a2815ac29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithm\GeneticAlgorithm\Task">
+      <UniqueIdentifier>{39f57c12-7743-4ca9-8ec8-d561ddc707f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithm\GeneticAlgorithm\Mutation\MutationImplementations">
+      <UniqueIdentifier>{0b25fb3d-fff8-471c-8c34-7689c7239dcc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="rectangle_solution.cpp">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Solution</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangleAproximator.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="image.cpp">
+      <Filter>Source Files\Algorithm\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="tournament.cpp">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Selection</Filter>
+    </ClCompile>
+    <ClCompile Include="generic_crossover.cpp">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Crossover</Filter>
+    </ClCompile>
+    <ClCompile Include="background_mutation.cpp">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Mutation\MutationImplementations</Filter>
+    </ClCompile>
+    <ClCompile Include="last_rect_mutation.cpp">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Mutation\MutationImplementations</Filter>
+    </ClCompile>
+    <ClCompile Include="total_mutation.cpp">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Mutation\MutationImplementations</Filter>
+    </ClCompile>
+    <ClCompile Include="random_rect_mutation.cpp">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Mutation\MutationImplementations</Filter>
+    </ClCompile>
+    <ClCompile Include="swap_mutation.cpp">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Mutation\MutationImplementations</Filter>
+    </ClCompile>
+    <ClCompile Include="evaluation_task.cpp">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="genetic_algorithm.cpp">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="canvas_window.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="stat_dialog.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="RectangleAproximator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="canvas_window.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="stat_dialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="RectangleAproximator.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="canvas_window.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="stat_dialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="RectangleAproximator.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rectangle_solution.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Solution</Filter>
+    </ClInclude>
+    <ClInclude Include="solution.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Solution</Filter>
+    </ClInclude>
+    <ClInclude Include="random_engine.h">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="dimensions.h">
+      <Filter>Source Files\Algorithm\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="image.h">
+      <Filter>Source Files\Algorithm\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="struct.h">
+      <Filter>Source Files\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="selection.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Selection</Filter>
+    </ClInclude>
+    <ClInclude Include="tournament.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Selection</Filter>
+    </ClInclude>
+    <ClInclude Include="generic_crossover.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Crossover</Filter>
+    </ClInclude>
+    <ClInclude Include="rectangle_crossover.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Crossover</Filter>
+    </ClInclude>
+    <ClInclude Include="rectangle_mutation.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Mutation</Filter>
+    </ClInclude>
+    <ClInclude Include="mutation_wrapper.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Mutation</Filter>
+    </ClInclude>
+    <ClInclude Include="background_mutation.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Mutation\MutationImplementations</Filter>
+    </ClInclude>
+    <ClInclude Include="last_rect_mutation.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Mutation\MutationImplementations</Filter>
+    </ClInclude>
+    <ClInclude Include="total_mutation.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Mutation\MutationImplementations</Filter>
+    </ClInclude>
+    <ClInclude Include="random_rect_mutation.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Mutation\MutationImplementations</Filter>
+    </ClInclude>
+    <ClInclude Include="swap_mutation.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Mutation\MutationImplementations</Filter>
+    </ClInclude>
+    <ClInclude Include="task.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="evaluation_task.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_poison.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="blocking_queue.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="genetic_algorithm.h">
+      <Filter>Source Files\Algorithm\GeneticAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RectangleAproximator.rc" />
+  </ItemGroup>
+</Project>
