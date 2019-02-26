@@ -14,26 +14,31 @@ public:
 	canvas_window(genetic_algorithm& ga, QWidget *parent = Q_NULLPTR);
 	~canvas_window();
 
-	
-
 private:
+	//Paints the best current best solution to the dialog
 	void paintEvent(QPaintEvent* event) override;
-	rectangle_solution* best_solution_{ nullptr };
 	
-	static void repaint_daemon(canvas_window* window);
-	std::thread repainter_;
+	//When double clicked, toggles stat_dialog
+	void mouseDoubleClickEvent(QMouseEvent* event) override;
 
-	genetic_algorithm& ga_;
-	bool closed_;
-
-	unsigned zoom_;
+	//Dialog and toggle state
 	bool stat_dialog_state_;
 	stat_dialog* stat_dialog_;
 
+	//Temporary best solution used for time saving
+	rectangle_solution* best_solution_{ nullptr };
+	
+	//Invokes update() every 30 ms, until closed gets set to true
+	static void repaint_daemon(canvas_window* window);
+	std::thread repainter_;
+	bool closed_;
+
+	//Drawing util
 	QRgb* pixels_;
 	image image_;
 	QImage q_image_;
+	unsigned zoom_;
 
-private slots:
-	void mouseDoubleClickEvent(QMouseEvent* event) override;
+	//Genetic algorithm
+	genetic_algorithm& ga_;
 };

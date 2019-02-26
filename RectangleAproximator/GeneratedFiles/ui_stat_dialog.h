@@ -90,7 +90,7 @@ public:
 
     void retranslateUi(QDialog *stat_dialog)
     {
-        stat_dialog->setWindowTitle(QApplication::translate("stat_dialog", "stat_dialog", nullptr));
+        stat_dialog->setWindowTitle(QApplication::translate("stat_dialog", "Stats", nullptr));
         relativeErrorResultLabel->setText(QApplication::translate("stat_dialog", "0", nullptr));
         iterationCounterLabel->setText(QApplication::translate("stat_dialog", "0", nullptr));
         iterationLabel->setText(QApplication::translate("stat_dialog", "Iteration:", nullptr));

@@ -28,8 +28,10 @@ public:
 
 	~genetic_algorithm();
 
+	///Starts training
 	static void run(genetic_algorithm* ga);
 
+	//Best solution and mutex
 	std::mutex best_solution_mutex;
 	rectangle_solution* best_solution{ nullptr };
 
@@ -37,7 +39,9 @@ public:
 
 	image& get_goal_image() const;
 
+	//Training pause mutex
 	std::mutex run_mutex;
+	///Stops algorithm
 	void stop();
 
 private:

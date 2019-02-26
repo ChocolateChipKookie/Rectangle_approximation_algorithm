@@ -15,12 +15,7 @@ public:
 private:
 	Ui::RectangleAproximatorClass ui;
 
-
-	std::wstring src_file;
-	std::wstring dest_file;
-
 private slots:
-
 	void on_sourceFileButton_clicked();
 	void on_startButton_clicked();
 };

@@ -143,9 +143,6 @@
     <ClInclude Include="random_engine.h">
       <Filter>Source Files\Algorithm</Filter>
     </ClInclude>
-    <ClInclude Include="dimensions.h">
-      <Filter>Source Files\Algorithm\Image</Filter>
-    </ClInclude>
     <ClInclude Include="image.h">
       <Filter>Source Files\Algorithm\Image</Filter>
     </ClInclude>

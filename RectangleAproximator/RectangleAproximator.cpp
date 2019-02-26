@@ -18,6 +18,7 @@ RectangleAproximator::RectangleAproximator(QWidget *parent)
 {
 	ui.setupUi(this);
 
+	//Set validators for all inputs
 	ui.populationSizeLineEdit->setValidator(new QIntValidator(1, INT_MAX));
 	ui.rectanglesLineEdit->setValidator(new QIntValidator(1, INT_MAX));
 	ui.rectangleIterationLineEdit->setValidator(new QIntValidator(1, INT_MAX));
@@ -66,27 +67,26 @@ RectangleAproximator::RectangleAproximator(QWidget *parent)
 	ui.K_numberLineEdit->setValidator(new QIntValidator(0, INT_MAX));
 	ui.K_numberLineEdit_2->setValidator(new QIntValidator(0, INT_MAX));
 
+	//Fixate the size of the window
 	this->setFixedSize(this->size());
 }
 
-RectangleAproximator::~RectangleAproximator()
-{
-}
+RectangleAproximator::~RectangleAproximator() = default;
 
 void RectangleAproximator::on_sourceFileButton_clicked()
 {
+	//Opens file dialog and sets text to the input line eidt
 	QString filename = QFileDialog::getOpenFileName(this, tr("Open file"), QDir::currentPath(), "Image File(*.*)");
 	ui.srcFileLineEdit->setText(filename);
-	src_file = filename.toStdWString();
 }
 
 void RectangleAproximator::on_startButton_clicked()
 {
+	//Get image path
 	std::wstring image_path = ui.srcFileLineEdit->text().toStdWString();
 
+	// Check if file exists and if yes: Is it really a file and no directory?
 	QFileInfo check_file(QString::fromStdWString(image_path));
-	// check if file exists and if yes: Is it really a file and no directory?
-	
 	if (!(check_file.exists() && check_file.isFile())) {
 		QMessageBox error_msg;
 		error_msg.setText("Selected file doesn't exist!");
@@ -94,8 +94,9 @@ void RectangleAproximator::on_startButton_clicked()
 		return;
 	}
 
+	//Initializing genetic algorithm class
 	image goal_image(image_path);
-	std::wstring image_name = image_path.substr(image_path.find_last_of('/') + 1);
+	const std::wstring image_name = image_path.substr(image_path.find_last_of('/') + 1);
 
 	last_rect_mutation lrm1(
 		std::stod(ui.lastRectMutationAlphaLineEdit->text().toStdWString()),
@@ -172,18 +173,18 @@ void RectangleAproximator::on_startButton_clicked()
 	genetic_algorithm ga(tm1, tm2, gc1, gc2, t1, t2, cleanup_after, population_size, iterations_per_rect, rectangles, cleanup_iterations, goal_image);
 
 	canvas_window cw(ga);
-	
 	cw.setWindowTitle(QString::fromStdWString(image_name));
 	cw.setModal(true);
 
+	//Start training
 	std::thread ga_thread(genetic_algorithm::run, &ga);
 
-	
+	//Hide until cw is done executing
 	this->hide();
 	cw.exec();
 	this->show();
 
+	//Join training thread
 	ga.stop();
 	ga_thread.join();
-
 }

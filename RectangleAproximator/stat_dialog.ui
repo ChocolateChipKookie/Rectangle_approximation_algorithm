@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>stat_dialog</string>
+   <string>Stats</string>
   </property>
   <widget class="QLabel" name="relativeErrorResultLabel">
    <property name="geometry">

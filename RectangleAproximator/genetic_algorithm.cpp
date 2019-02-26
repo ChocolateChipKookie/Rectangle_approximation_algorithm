@@ -28,7 +28,6 @@ genetic_algorithm::genetic_algorithm(
 		rectangles_(rectangles),
 		cleanup_after_(cleanup_after)
 {
-
 	int tmp = rectangles;
 	while(tmp - cleanup_after > 0)
 	{
@@ -47,6 +46,7 @@ genetic_algorithm::genetic_algorithm(
 
 genetic_algorithm::~genetic_algorithm()
 {
+	//Stops all threads
 	thread_poison poison;
 	for(unsigned i = 0, threads = threads_.size(); i < threads; ++i)
 	{

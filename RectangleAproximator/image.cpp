@@ -3,9 +3,8 @@
 #include <fstream>
 #include <cstdlib>
 
-image::image(int width, int height) : dimensions_{width, height}, data_{std::vector<color>(width * height)}
-{
-}
+image::image(int width, int height) : dimensions_({width, height}), data_(std::vector<color>(width * height))
+{}
 
 image::image(std::wstring& file_name)
 {
@@ -66,11 +65,13 @@ unsigned long long image::compare(image& other)
 {
 	double total{ 0 };
 
+	//If 2 images are compared and different, throw error
 	if(!(other.dimensions_.width == dimensions_.width && other.dimensions_.height == dimensions_.height))
 	{
 		throw std::runtime_error{ "Dimensions of images don't match!" };
 	}
 
+	//Add all absolute differences
 	for(unsigned i = 0; i < data_.size(); ++i)
 	{
 		total += std::abs(static_cast<int>(data_[i][0]) - static_cast<int>(other.data_[i][0]));// *0.2126;
@@ -88,15 +89,13 @@ std::vector<color>& image::get_data()
 
 void image::draw_rectangle(rectangle& rect, unsigned zoom)
 {
-	int x1 = rect.x + rect.width;
-	int y1 = rect.y + rect.height;
-
-	x1 *= zoom;
-	y1 *= zoom;
-
+	//Set lower right
+	int x1 = (rect.x + rect.width) * zoom;
+	int y1 = (rect.y + rect.height) * zoom;
 	if (x1 > dimensions_.width) x1 = dimensions_.width;
 	if (y1 > dimensions_.height) y1 = dimensions_.height;
 
+	//Fill
 	for (int y = rect.y * zoom; y < y1; ++y)
 	{
 		for (int x = rect.x * zoom; x < x1; ++x)
@@ -104,12 +103,6 @@ void image::draw_rectangle(rectangle& rect, unsigned zoom)
 			std::copy(rect.color.begin(), rect.color.end(), data_[x + y * dimensions_.width].begin());
 		}
 	}
-}
-
-//Used for testing purposes only
-void image::draw_rectangle(rectangle&& rect)
-{
-	draw_rectangle(rect);
 }
 
 void image::draw_solution(rectangle_solution& solution, unsigned zoom)
@@ -125,6 +118,7 @@ void image::save(std::wstring& file_name)
 {
 	cv::Mat im;
 
+	//Draw image to mat
 	im.create(dimensions_.height, dimensions_.width, CV_8UC3);
 	int pos = 0;
 	for (int y = 0; y < dimensions_.height; ++y)
@@ -139,10 +133,11 @@ void image::save(std::wstring& file_name)
 		}
 	}
 
-	std::vector<uchar> image;
-	cv::imencode(".jpg", im, image);
+	//Copy image to buffer
+	std::vector<uchar> buf;
+	cv::imencode(".jpg", im, buf);
 
+	//Create out stream and save the image
 	std::ofstream out_image(file_name, std::ios::out | std::ios::binary);
-
-	out_image.write(reinterpret_cast<const char*>(image.data()), image.size());
+	out_image.write(reinterpret_cast<const char*>(buf.data()), buf.size());
 }
