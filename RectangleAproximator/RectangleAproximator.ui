@@ -122,7 +122,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>0.75</string>
+     <string>0.80</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="randomMutationLineEdit">
@@ -135,7 +135,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>0.2</string>
+     <string>0.15</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="backgroundMutationLineEdit">
@@ -262,7 +262,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>0.1</string>
+     <string>0.3</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lastRectMutationAlphaLineEdit">
@@ -275,7 +275,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>0.35</string>
+     <string>0.2</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lastRectMutationMutationLineEdit">
@@ -301,7 +301,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>0.05</string>
+     <string>0.15</string>
     </property>
    </widget>
    <widget class="QLabel" name="lastRectMutationAlphaLabel">
@@ -417,7 +417,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>0.3</string>
+     <string>0.2</string>
     </property>
    </widget>
    <widget class="QLabel" name="backgroundMutationAlphaLabel">
@@ -616,7 +616,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>7</string>
+     <string>10</string>
     </property>
    </widget>
    <widget class="QLabel" name="K_numberLabel">
@@ -714,7 +714,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>500</string>
+     <string>1000</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="cleanupLineEdit">
@@ -727,7 +727,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>500</string>
+     <string>1000</string>
     </property>
    </widget>
    <widget class="QLabel" name="cleanupLabel">
