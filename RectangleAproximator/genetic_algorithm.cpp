@@ -29,7 +29,7 @@ genetic_algorithm::genetic_algorithm(
 		cleanup_after_(cleanup_after)
 {
 	int tmp = rectangles;
-	while(tmp - cleanup_after > 0)
+	while(tmp - static_cast<int>(cleanup_after) > 0)
 	{
 		switch_schedule_.emplace_back(cleanup_after);
 		tmp -= cleanup_after;
