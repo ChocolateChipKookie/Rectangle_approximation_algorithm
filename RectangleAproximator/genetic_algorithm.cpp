@@ -72,45 +72,64 @@ void genetic_algorithm::run(genetic_algorithm* ga)
 
 	int it{ 0 };
 
+	//Temporary storage for the best individual in a generation
+	rectangle_solution* current_best{ nullptr };
+
 	for(unsigned s : ga->switch_schedule_)
 	{
 		for (unsigned rects = 0; rects < s; ++rects)
 		{
-			if (it != 0)
+			//In the first iteration, don't rewrite the whole population
+			if (current_best)
 			{
 				delete_population(population);
 				for (auto& solution : population)
 				{
-					solution = new rectangle_solution(*(ga->best_solution));
+					solution = new rectangle_solution(*(current_best));
 				}
 			}
 
+			//Add new rectangle
 			for (auto& solution : population)
 			{
 				solution->add_new_random(ga->goal_image_.dimensions_);
 			}
 
+			//n iterations for every rectangle
 			for (unsigned iter = 0; iter < ga->iterations_till_new_; ++iter)
 			{
+				//Is stop gets called from the outside, clean up the mess and return
 				if (ga->stop_)
 				{
+					//It is cleaner like this
+					goto end;
+					/*
+					delete current_best;
 					delete_population(population);
 					return;
+					*/
 				}
+				
+				//Used to stop the training process while saving the picture
 				std::lock_guard<std::mutex> lg(ga->run_mutex);
 
+				//Set extern iteration counter and evaluate population
 				ga->current_iteration = it++;
 				ga->evaluate(population);
 
-				rectangle_solution* b = *std::max_element(population.begin(), population.end(), [](solution *s1, solution *s2) {return s1->fitness < s2->fitness; });
+				//Set the current best individual
+				delete current_best;
+				current_best = new rectangle_solution(**std::max_element(population.begin(), population.end(), [](solution *s1, solution *s2) {return s1->fitness < s2->fitness; }));
 
-				if (ga->best_solution == nullptr || b->fitness > ga->best_solution->fitness)
+				//Check if it is better then the best all time
+				if (ga->best_solution == nullptr || current_best->fitness > ga->best_solution->fitness)
 				{
 					std::lock_guard<std::mutex> lg(ga->best_solution_mutex);
 					delete[] ga->best_solution;
-					ga->best_solution = new rectangle_solution(*b);
+					ga->best_solution = new rectangle_solution(*current_best);
 				}
 
+				//Create new generation
 				const auto new_generation = ga->generate_population(population, ga->crossover_, ga->selection_);
 				delete_population(population);
 				population = new_generation;
@@ -121,27 +140,35 @@ void genetic_algorithm::run(genetic_algorithm* ga)
 		delete_population(population);
 		for (auto& solution : population)
 		{
-			solution = new rectangle_solution(*(ga->best_solution));
+			solution = new rectangle_solution(*current_best);
 		}
 
 		for (unsigned iter = 0; iter < ga->iterations_after_; ++iter)
 		{
 			if (ga->stop_)
 			{
+				//It is cleaner like this
+				goto end;
+				/*
+				delete current_best;
 				delete_population(population);
 				return;
+				*/
 			}
+
 			std::lock_guard<std::mutex> lg(ga->run_mutex);
 
 			ga->current_iteration = it++;
 			ga->evaluate(population);
 
-			rectangle_solution* b = *std::max_element(population.begin(), population.end(), [](solution *s1, solution *s2) {return s1->fitness < s2->fitness; });
+			delete current_best;
+			current_best = new rectangle_solution(**std::max_element(population.begin(), population.end(), [](solution *s1, solution *s2) {return s1->fitness < s2->fitness; }));
 
-			if (ga->best_solution == nullptr || b->fitness > ga->best_solution->fitness)
+			if (ga->best_solution == nullptr || current_best->fitness > ga->best_solution->fitness)
 			{
+				std::lock_guard<std::mutex> lg(ga->best_solution_mutex);
 				delete[] ga->best_solution;
-				ga->best_solution = new rectangle_solution(*b);
+				ga->best_solution = new rectangle_solution(*current_best);
 			}
 
 			const auto new_generation = ga->generate_population(population, ga->crossover_after_, ga->selection_after_);
@@ -154,15 +181,16 @@ void genetic_algorithm::run(genetic_algorithm* ga)
 	while(!ga->stop_)
 	{
 		ga->current_iteration = it++;
-
 		ga->evaluate(population);
 
-		rectangle_solution* b = *std::max_element(population.begin(), population.end(), [](solution *s1, solution *s2) {return s1->fitness < s2->fitness; });
+		delete current_best;
+		current_best = new rectangle_solution(**std::max_element(population.begin(), population.end(), [](solution *s1, solution *s2) {return s1->fitness < s2->fitness; }));
 
-		if (ga->best_solution == nullptr || b->fitness > ga->best_solution->fitness)
+		if (ga->best_solution == nullptr || current_best->fitness > ga->best_solution->fitness)
 		{
+			std::lock_guard<std::mutex> lg(ga->best_solution_mutex);
 			delete[] ga->best_solution;
-			ga->best_solution = new rectangle_solution(*b);
+			ga->best_solution = new rectangle_solution(*current_best);
 		}
 
 		const auto new_generation = ga->generate_population(population, ga->crossover_after_, ga->selection_after_);
@@ -171,6 +199,9 @@ void genetic_algorithm::run(genetic_algorithm* ga)
 		mutate_population(population, ga->mutation_after_);
 	}
 
+	//Just to be cleaner and not have more exit points
+	end:
+	delete current_best;
 	delete_population(population);
 }
 
