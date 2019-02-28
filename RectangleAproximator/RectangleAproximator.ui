@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>510</width>
-    <height>1031</height>
+    <height>989</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,7 +31,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>970</y>
+      <y>930</y>
       <width>491</width>
       <height>51</height>
      </rect>
@@ -122,7 +122,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>0.80</string>
+     <string>0.70</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="randomMutationLineEdit">
@@ -161,7 +161,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>0</string>
+     <string>0.1</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="srcFileLineEdit">
@@ -220,7 +220,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>890</y>
+      <y>850</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -238,7 +238,7 @@
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>890</y>
+      <y>850</y>
       <width>170</width>
       <height>31</height>
      </rect>
@@ -256,7 +256,7 @@
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>890</y>
+      <y>850</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -575,42 +575,11 @@
      <string>1</string>
     </property>
    </widget>
-   <widget class="QLabel" name="swapMutationSwapsLabel">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>850</y>
-      <width>141</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Swaps:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="swapMutationSwapsLineEdit">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>850</y>
-      <width>71</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="K_numberLineEdit">
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>930</y>
+      <y>890</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -623,7 +592,7 @@
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>930</y>
+      <y>890</y>
       <width>171</width>
       <height>31</height>
      </rect>
@@ -641,7 +610,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>930</y>
+      <y>890</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -849,7 +818,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>0.8</string>
+     <string>0.7</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="randomMutationRectanglesLineEdit_2">
@@ -901,7 +870,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>0.4</string>
+     <string>0.1</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="swapMutationLineEdit_2">
@@ -914,27 +883,14 @@
      </rect>
     </property>
     <property name="text">
-     <string>0.2</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="swapMutationSwapsLineEdit_2">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>850</y>
-      <width>71</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>2</string>
+     <string>0.3</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="K_numberLineEdit_2">
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>930</y>
+      <y>890</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -947,7 +903,7 @@
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>890</y>
+      <y>850</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -1116,8 +1072,6 @@
   <tabstop>randomMutationNewGeneLineEdit_2</tabstop>
   <tabstop>swapMutationLineEdit</tabstop>
   <tabstop>swapMutationLineEdit_2</tabstop>
-  <tabstop>swapMutationSwapsLineEdit</tabstop>
-  <tabstop>swapMutationSwapsLineEdit_2</tabstop>
   <tabstop>crossoverLineEdit</tabstop>
   <tabstop>crossoverLineEdit_2</tabstop>
   <tabstop>K_numberLineEdit</tabstop>

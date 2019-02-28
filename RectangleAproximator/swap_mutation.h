@@ -5,10 +5,10 @@ class swap_mutation : public rectangle_mutation
 {
 public:
 
-	swap_mutation(unsigned swaps = 1);
+	swap_mutation(dimensions& dimensions_);
 
 	rectangle_solution* mutate(rectangle_solution* parent) const override;
 
 private:
-	unsigned swaps_;
+	dimensions& dimensions_;
 };

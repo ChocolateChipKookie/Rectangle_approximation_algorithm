@@ -58,8 +58,6 @@ RectangleAproximator::RectangleAproximator(QWidget *parent)
 
 	ui.swapMutationLineEdit->setValidator(new QDoubleValidator(0, 1, 5));
 	ui.swapMutationLineEdit_2->setValidator(new QDoubleValidator(0, 1, 5));
-	ui.swapMutationSwapsLineEdit->setValidator(new QIntValidator(0, INT_MAX));
-	ui.swapMutationSwapsLineEdit_2->setValidator(new QIntValidator(0, INT_MAX));
 
 	ui.crossoverLineEdit->setValidator(new QDoubleValidator(0, 1, 5));
 	ui.crossoverLineEdit_2->setValidator(new QDoubleValidator(0, 1, 5));
@@ -144,11 +142,11 @@ void RectangleAproximator::on_startButton_clicked()
 	const mutation_wrapper rrm2w(rrm2, std::stod(ui.randomMutationLineEdit_2->text().toStdWString()));
 
 	swap_mutation sm1(
-		std::stoi(ui.swapMutationSwapsLineEdit->text().toStdWString())
+		goal_image.dimensions_
 	);
 	const mutation_wrapper sm1w(sm1, std::stod(ui.swapMutationLineEdit->text().toStdWString()));
 	swap_mutation sm2(
-		std::stoi(ui.swapMutationSwapsLineEdit_2->text().toStdWString())
+		goal_image.dimensions_
 	);
 	const mutation_wrapper sm2w(sm2, std::stod(ui.swapMutationLineEdit_2->text().toStdWString()));
 
