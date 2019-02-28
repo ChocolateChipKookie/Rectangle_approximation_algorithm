@@ -161,7 +161,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>0.1</string>
+     <string>0.0</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="srcFileLineEdit">
@@ -1054,7 +1054,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>0</string>
+     <string>0.1</string>
     </property>
    </widget>
    <widget class="QLabel" name="newRectMutationLabel">

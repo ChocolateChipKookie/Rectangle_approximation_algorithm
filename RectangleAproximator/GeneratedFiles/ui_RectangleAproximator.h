@@ -412,7 +412,7 @@ public:
         lastRectMutationLineEdit->setText(QApplication::translate("RectangleAproximatorClass", "0.70", nullptr));
         randomMutationLineEdit->setText(QApplication::translate("RectangleAproximatorClass", "0.15", nullptr));
         backgroundMutationLineEdit->setText(QApplication::translate("RectangleAproximatorClass", "0.05", nullptr));
-        swapMutationLineEdit->setText(QApplication::translate("RectangleAproximatorClass", "0.1", nullptr));
+        swapMutationLineEdit->setText(QApplication::translate("RectangleAproximatorClass", "0.0", nullptr));
         srcFileLineEdit->setText(QString());
         srcFileLineEdit->setPlaceholderText(QApplication::translate("RectangleAproximatorClass", " Select file", nullptr));
         srcFileLabel->setText(QApplication::translate("RectangleAproximatorClass", "Source file:", nullptr));
@@ -473,7 +473,7 @@ public:
         switchesLineEdit->setText(QApplication::translate("RectangleAproximatorClass", "25", nullptr));
         switchesLabel->setText(QApplication::translate("RectangleAproximatorClass", "Switches after:", nullptr));
         newRectMutationLineEdit_2->setText(QApplication::translate("RectangleAproximatorClass", "0.1", nullptr));
-        newRectMutationLineEdit->setText(QApplication::translate("RectangleAproximatorClass", "0", nullptr));
+        newRectMutationLineEdit->setText(QApplication::translate("RectangleAproximatorClass", "0.1", nullptr));
         newRectMutationLabel->setText(QApplication::translate("RectangleAproximatorClass", "New rectangle:", nullptr));
         saveConfigButton->setText(QApplication::translate("RectangleAproximatorClass", "Save config", nullptr));
         loadConfigButton->setText(QApplication::translate("RectangleAproximatorClass", "Load config", nullptr));
