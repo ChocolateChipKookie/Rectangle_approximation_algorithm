@@ -115,12 +115,14 @@
   <ItemGroup>
     <ClCompile Include="background_mutation.cpp" />
     <ClCompile Include="canvas_window.cpp" />
+    <ClCompile Include="config.cpp" />
     <ClCompile Include="evaluation_task.cpp" />
     <ClCompile Include="generic_crossover.cpp" />
     <ClCompile Include="genetic_algorithm.cpp" />
     <ClCompile Include="image.cpp" />
     <ClCompile Include="last_rect_mutation.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="new_rect_mutation.cpp" />
     <ClCompile Include="random_rect_mutation.cpp" />
     <ClCompile Include="RectangleAproximator.cpp" />
     <ClCompile Include="rectangle_solution.cpp" />
@@ -147,6 +149,8 @@
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;D:\source\OpenCV\opencv\build\include</IncludePath>
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;D:\source\OpenCV\opencv\build\include</IncludePath>
     </QtMoc>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="new_rect_mutation.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="evaluation_task.h" />
     <ClInclude Include="generic_crossover.h" />

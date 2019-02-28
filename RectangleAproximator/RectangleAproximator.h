@@ -18,4 +18,6 @@ private:
 private slots:
 	void on_sourceFileButton_clicked();
 	void on_startButton_clicked();
+	void on_saveConfigButton_clicked();
+	void on_loadConfigButton_clicked();
 };

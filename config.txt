@@ -1,0 +1,41 @@
+Population size: 100
+Rectangles: 1000
+Iterations per rectangle: 50
+Cleanup iterations: 1000
+Switches after: 25
+Secondary mutation(1): 0.5
+Secondary mutation(2): 0.5
+Last rectangle(1): 0.7
+Last rectangle(2): 0.1
+Last rectangle alpha(1): 0.2
+Last rectangle alpha(2): 0
+Last rectangle mutation(1): 0.25
+Last rectangle mutation(2): 0
+Last rectangle new gene(1): 0.15
+Last rectangle new gene(2): 0
+Background(1): 0.05
+Background(2): 0
+Background alpha(1): 0.2
+Background alpha(2): 0
+Background mutation(1): 0.3
+Background mutation(2): 0
+Background new gene(1): 0.05
+Background new gene(2): 0
+Random(1): 0.15
+Random(2): 0.7
+Random rectangle(1): 1
+Random rectangle(2): 1
+Random alpha(1): 0.2
+Random alpha(2): 0.15
+Random mutation(1): 0.2
+Random mutation(2): 0.25
+Random new gene(1): 0.1
+Random new gene(2): 0.1
+Swap(1): 0.1
+Swap(2): 0.1
+New(1): 0
+New(2): 0.1
+Crossover(1): 0.3
+Crossover(2): 0.3
+Selection k-number(1): 10
+Selection k-number(2): 15

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>510</width>
-    <height>989</height>
+    <width>521</width>
+    <height>1027</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QPushButton" name="sourceFileButton">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>480</x>
       <y>10</y>
       <width>31</width>
       <height>31</height>
@@ -30,9 +30,9 @@
    <widget class="QPushButton" name="startButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>930</y>
-      <width>491</width>
+      <x>350</x>
+      <y>970</y>
+      <width>161</width>
       <height>51</height>
      </rect>
     </property>
@@ -61,7 +61,7 @@
    <widget class="QLabel" name="swapMutationLabel">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>160</x>
       <y>810</y>
       <width>171</width>
       <height>31</height>
@@ -79,7 +79,7 @@
    <widget class="QLabel" name="randomRectMutationLabel">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>160</x>
       <y>610</y>
       <width>171</width>
       <height>31</height>
@@ -97,7 +97,7 @@
    <widget class="QLabel" name="backgroundMutationLabel">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>160</x>
       <y>450</y>
       <width>171</width>
       <height>31</height>
@@ -115,7 +115,7 @@
    <widget class="QLineEdit" name="lastRectMutationLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>290</y>
       <width>71</width>
       <height>31</height>
@@ -128,7 +128,7 @@
    <widget class="QLineEdit" name="randomMutationLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>610</y>
       <width>71</width>
       <height>31</height>
@@ -141,7 +141,7 @@
    <widget class="QLineEdit" name="backgroundMutationLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>450</y>
       <width>71</width>
       <height>31</height>
@@ -154,7 +154,7 @@
    <widget class="QLineEdit" name="swapMutationLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>810</y>
       <width>71</width>
       <height>31</height>
@@ -167,7 +167,7 @@
    <widget class="QLineEdit" name="srcFileLineEdit">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>170</x>
       <y>10</y>
       <width>301</width>
       <height>31</height>
@@ -201,7 +201,7 @@
    <widget class="QLabel" name="lastRectMutationLabel">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>160</x>
       <y>290</y>
       <width>171</width>
       <height>31</height>
@@ -220,7 +220,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>850</y>
+      <y>890</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -237,8 +237,8 @@
    <widget class="QLabel" name="crossoverLabel_2">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>850</y>
+      <x>160</x>
+      <y>890</y>
       <width>170</width>
       <height>31</height>
      </rect>
@@ -255,8 +255,8 @@
    <widget class="QLineEdit" name="crossoverLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>850</y>
+      <x>360</x>
+      <y>890</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -268,7 +268,7 @@
    <widget class="QLineEdit" name="lastRectMutationAlphaLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>330</y>
       <width>71</width>
       <height>31</height>
@@ -281,7 +281,7 @@
    <widget class="QLineEdit" name="lastRectMutationMutationLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>370</y>
       <width>71</width>
       <height>31</height>
@@ -294,7 +294,7 @@
    <widget class="QLineEdit" name="lastRectMutationNewGeneLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>410</y>
       <width>71</width>
       <height>31</height>
@@ -307,7 +307,7 @@
    <widget class="QLabel" name="lastRectMutationAlphaLabel">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>330</y>
       <width>141</width>
       <height>31</height>
@@ -325,7 +325,7 @@
    <widget class="QLabel" name="lastRectMutationMutationLabel">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>370</y>
       <width>141</width>
       <height>31</height>
@@ -343,7 +343,7 @@
    <widget class="QLabel" name="lastRectMutationNewGeneLabel">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>410</y>
       <width>141</width>
       <height>31</height>
@@ -361,7 +361,7 @@
    <widget class="QLineEdit" name="backgroundMutationMutationLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>530</y>
       <width>71</width>
       <height>31</height>
@@ -374,7 +374,7 @@
    <widget class="QLabel" name="backgroundMutationMutationLabel">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>530</y>
       <width>141</width>
       <height>31</height>
@@ -392,7 +392,7 @@
    <widget class="QLabel" name="backgroundMutationNewGeneLabel">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>570</y>
       <width>141</width>
       <height>31</height>
@@ -410,7 +410,7 @@
    <widget class="QLineEdit" name="backgroundMutationAlphaLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>490</y>
       <width>71</width>
       <height>31</height>
@@ -423,7 +423,7 @@
    <widget class="QLabel" name="backgroundMutationAlphaLabel">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>490</y>
       <width>141</width>
       <height>31</height>
@@ -441,7 +441,7 @@
    <widget class="QLineEdit" name="backgroundMutationNewGeneLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>570</y>
       <width>71</width>
       <height>31</height>
@@ -454,7 +454,7 @@
    <widget class="QLineEdit" name="randomMutationMutationLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>730</y>
       <width>71</width>
       <height>31</height>
@@ -467,7 +467,7 @@
    <widget class="QLabel" name="randomMutationMutationLabel">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>730</y>
       <width>141</width>
       <height>31</height>
@@ -485,7 +485,7 @@
    <widget class="QLabel" name="randomMutationNewGeneLabel">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>770</y>
       <width>141</width>
       <height>31</height>
@@ -503,7 +503,7 @@
    <widget class="QLineEdit" name="randomMutationAlphaLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>690</y>
       <width>71</width>
       <height>31</height>
@@ -516,7 +516,7 @@
    <widget class="QLabel" name="randomMutationAlphaLabel">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>690</y>
       <width>141</width>
       <height>31</height>
@@ -534,7 +534,7 @@
    <widget class="QLineEdit" name="randomMutationNewGeneLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>770</y>
       <width>71</width>
       <height>31</height>
@@ -547,7 +547,7 @@
    <widget class="QLabel" name="randomMutationRectanglesLabel">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>650</y>
       <width>141</width>
       <height>31</height>
@@ -565,7 +565,7 @@
    <widget class="QLineEdit" name="randomMutationRectanglesLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>650</y>
       <width>71</width>
       <height>31</height>
@@ -578,8 +578,8 @@
    <widget class="QLineEdit" name="K_numberLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>890</y>
+      <x>360</x>
+      <y>930</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -591,8 +591,8 @@
    <widget class="QLabel" name="K_numberLabel">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>890</y>
+      <x>160</x>
+      <y>930</y>
       <width>171</width>
       <height>31</height>
      </rect>
@@ -610,7 +610,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>890</y>
+      <y>930</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -645,7 +645,7 @@
    <widget class="QLineEdit" name="rectangleIterationLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>130</y>
       <width>151</width>
       <height>31</height>
@@ -676,7 +676,7 @@
    <widget class="QLineEdit" name="rectanglesLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>90</y>
       <width>151</width>
       <height>31</height>
@@ -689,7 +689,7 @@
    <widget class="QLineEdit" name="cleanupLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>170</y>
       <width>151</width>
       <height>31</height>
@@ -720,7 +720,7 @@
    <widget class="QLineEdit" name="lastRectMutationAlphaLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>330</y>
       <width>71</width>
       <height>31</height>
@@ -733,7 +733,7 @@
    <widget class="QLineEdit" name="lastRectMutationMutationLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>370</y>
       <width>71</width>
       <height>31</height>
@@ -746,7 +746,7 @@
    <widget class="QLineEdit" name="lastRectMutationNewGeneLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>410</y>
       <width>71</width>
       <height>31</height>
@@ -759,7 +759,7 @@
    <widget class="QLineEdit" name="backgroundMutationLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>450</y>
       <width>71</width>
       <height>31</height>
@@ -772,7 +772,7 @@
    <widget class="QLineEdit" name="backgroundMutationAlphaLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>490</y>
       <width>71</width>
       <height>31</height>
@@ -785,7 +785,7 @@
    <widget class="QLineEdit" name="backgroundMutationMutationLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>530</y>
       <width>71</width>
       <height>31</height>
@@ -798,7 +798,7 @@
    <widget class="QLineEdit" name="backgroundMutationNewGeneLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>570</y>
       <width>71</width>
       <height>31</height>
@@ -811,7 +811,7 @@
    <widget class="QLineEdit" name="randomMutationLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>610</y>
       <width>71</width>
       <height>31</height>
@@ -824,7 +824,7 @@
    <widget class="QLineEdit" name="randomMutationRectanglesLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>650</y>
       <width>71</width>
       <height>31</height>
@@ -837,7 +837,7 @@
    <widget class="QLineEdit" name="randomMutationAlphaLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>690</y>
       <width>71</width>
       <height>31</height>
@@ -850,7 +850,7 @@
    <widget class="QLineEdit" name="randomMutationMutationLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>730</y>
       <width>71</width>
       <height>31</height>
@@ -863,7 +863,7 @@
    <widget class="QLineEdit" name="randomMutationNewGeneLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>770</y>
       <width>71</width>
       <height>31</height>
@@ -876,21 +876,21 @@
    <widget class="QLineEdit" name="swapMutationLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>810</y>
       <width>71</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>0.3</string>
+     <string>0.1</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="K_numberLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>890</y>
+      <x>440</x>
+      <y>930</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -902,8 +902,8 @@
    <widget class="QLineEdit" name="crossoverLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>850</y>
+      <x>440</x>
+      <y>890</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -915,14 +915,14 @@
    <widget class="QLineEdit" name="lastRectMutationLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>290</y>
       <width>71</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>0.0</string>
+     <string>0.1</string>
     </property>
    </widget>
    <widget class="QLabel" name="populationSizeLabel">
@@ -946,7 +946,7 @@
    <widget class="QLineEdit" name="populationSizeLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>50</y>
       <width>151</width>
       <height>31</height>
@@ -959,7 +959,7 @@
    <widget class="QLabel" name="secondaryMutationLabel">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>160</x>
       <y>250</y>
       <width>191</width>
       <height>31</height>
@@ -977,7 +977,7 @@
    <widget class="QLineEdit" name="secondaryMutationLineEdit_2">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>440</x>
       <y>250</y>
       <width>71</width>
       <height>31</height>
@@ -990,7 +990,7 @@
    <widget class="QLineEdit" name="secondaryMutationLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>250</y>
       <width>71</width>
       <height>31</height>
@@ -1003,7 +1003,7 @@
    <widget class="QLineEdit" name="switchesLineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>210</y>
       <width>151</width>
       <height>31</height>
@@ -1029,6 +1029,76 @@
     </property>
     <property name="text">
      <string>Switches after:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="newRectMutationLineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>850</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0.1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="newRectMutationLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>850</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="newRectMutationLabel">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>850</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>New rectangle:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveConfigButton">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>970</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save config</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loadConfigButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>970</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load config</string>
     </property>
    </widget>
   </widget>
