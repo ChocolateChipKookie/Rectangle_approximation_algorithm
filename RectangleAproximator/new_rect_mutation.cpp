@@ -9,7 +9,7 @@ rectangle_solution* new_rect_mutation::mutate(rectangle_solution* parent) const
 {
 	rectangle_solution* res = parent->clone();
 
-	int to_delete = random::rng.get_random(res->get_last_position() - 1);
+	int to_delete = random::rng.get_random(res->get_last_position());
 
 	for(unsigned i = 0; i < res->current_rectangles; ++i)
 	{
